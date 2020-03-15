@@ -1,0 +1,41 @@
+{
+  "Actions": [
+    {
+      "Icon": "images/pluginIcon", 
+      "Name": "Counter", 
+      "States": [
+        {
+          "Image": "images/actionIcon",
+          "TitleAlignment": "middle", 
+          "FontSize": "16"
+        }
+      ], 
+      "SupportedInMultiActions": false,
+      "Tooltip": "A simple counter", 
+      "UUID": "com.viddie.counter.action"
+    }
+  ], 
+  "SDKVersion": 2,
+  "Author": "viddie", 
+  "CodePath": "index.html", 
+  "PropertyInspectorPath": "propertyinspector/index.html",
+  "Description": "A simple plugin to control a counter", 
+  "Name": "Counter", 
+  "Icon": "images/actionIcon", 
+  "URL": "https://github.com/viddie/sdCounter", 
+  "Version": "1.0",
+  "OS": [
+    {
+        "Platform": "mac", 
+        "MinimumVersion" : "10.11"
+    },
+    {
+        "Platform": "windows", 
+        "MinimumVersion" : "10"
+    }
+  ],
+  "Software": 
+    {
+        "MinimumVersion" : "4.1"
+    }
+}
