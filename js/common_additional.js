@@ -15,14 +15,15 @@ function getFontSizeForNumber(num){
 	if(num != 0){
 		magnitude = Math.floor(Math.log10(Math.abs(num)));
 	}
-				
-	let fontSize = fontMagnitudes[""+magnitude][0];
+	
+	let magnitudeArr = fontMagnitudes[""+magnitude] || fontMagnitudes.other;
+	let fontSize = magnitudeArr[0];
 	if(fontSize === undefined){
 		fontSize = fontMagnitudes.other[0];
 	}
 				
 	if(num < 0 && magnitude > 1){
-		fontSize -= fontMagnitudes[""+magnitude][1] || 2;
+		fontSize -= magnitudeArr[1];
 	}
 	
 	return fontSize;

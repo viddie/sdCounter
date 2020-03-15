@@ -125,6 +125,8 @@ function connected (jsn) {
 						stepSize: handleObj.settings.stepSize,
 						longPressStepSize: handleObj.settings.longPressStepSize,
 					});
+					
+					action.displayCounterValue(context, handleObj.settings.currentValue);
 				}
 			},
 			
